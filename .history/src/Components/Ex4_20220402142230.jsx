@@ -1,0 +1,25 @@
+import React, { Component } from 'react'
+
+ class Ex4 extends Component {
+     state={
+        products: [
+        { name: "Perk", quantity: 10, sales: 7 },
+        { name: "5Star", quantity: 7, sales: 9 },
+        { name: "Pepsi", quantity: 10, sales: 20 },
+        { name: "Maggi", quantity: 41, sales: 22 },
+        { name: "Coke", quantity: 18, sales: 50 }
+        ]
+     };
+  render() {
+    //   let {products} = this.state;
+      let {name,quantity,sales} = this.state.products;
+    return (
+      <div className='container'>
+          <li>{name}</li>
+        
+      </div>
+    )
+  }
+}
+
+export default Ex4
